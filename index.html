@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wheelchair Guidance Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Wheelchair Guidance Hub</h1>
+    <nav>
+      <a href="#chatbot">Chatbot</a>
+      <a href="#map">Accessible Map</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="chatbot">
+      <h2>Chatbot</h2>
+      <div id="chat-container"></div>
+      <input id="user-input" type="text" placeholder="Ask a question..." />
+      <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <section id="map">
+      <h2>Accessible Venue Map</h2>
+      <div id="map-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wheelchair Guidance Hub</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="chatbot.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>
